@@ -30,7 +30,7 @@ function ParseResponse() {
         inxb = asciiRes.indexOf("}", inxa) + 1;
         res = asciiRes.substring(inxa, inxb);
         console.log("asciiRes >> " + asciiRes + "\nres >> " + res);
-        // usbResponse = JSON.parse(res);
+        usbResponse = JSON.parse(res);
         console.log(usbResponse);
 
         // remove substring + excess from total response
